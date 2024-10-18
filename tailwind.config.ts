@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        textDefault: "var(--text-default)",
+      },
+      fontFamily: {
+        romantic: ['Roboto', 'sans-serif'],
       },
     },
   },
