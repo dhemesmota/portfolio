@@ -6,7 +6,7 @@ export default function HomeSection() {
       <div>
         <p className="text-gray-500">Olá,</p>
         <h1 className="text-6xl font-black ">EU SOU UM <br/>DESENVOLVEDOR <br/> DE SOFTWARE</h1>
-        <p className="text-gray-500 mb-8">Seja bem-vindo ao meu portfólio website</p>
+        <p className="text-gray-500 mb-8">Seja bem-vindo ao meu portfólio</p>
         <button className="px-8 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700">
           Saiba mais sobre mim
         </button>

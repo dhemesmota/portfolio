@@ -8,6 +8,9 @@ export default function Home() {
       
       <HomeSection />
       
+      <h3>
+        Portfólio em construção...
+      </h3>
     </div>
   );
 }
