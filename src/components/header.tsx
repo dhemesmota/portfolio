@@ -10,34 +10,58 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full mx-auto max-w-screen-xl px-8 py-4 flex items-center justify-between">
-      <h1 className="text-3xl font-extrabold align-middle">
-        <Image src={logo} alt="Logo" className="w-10 h-10 inline-block mr-2" />
+    <header className='mx-auto flex w-full max-w-screen-xl items-center justify-between px-8 py-4'>
+      <h1 className='align-middle text-3xl font-extrabold'>
+        <Image src={logo} alt='Logo' className='mr-2 inline-block h-10 w-10' />
         <span>Dhemes Mota</span>
       </h1>
-      <nav className="hidden md:flex space-x-6">
-        <a href="#home" className="hover:text-pinkDark">Home</a>
-        <a href="#about" className="hover:text-pinkDark">Sobre</a>
-        <a href="#portfolio" className="hover:text-pinkDark">Portfólio</a>
-        <a href="#services" className="hover:text-pinkDark">Serviços</a>
-        <a href="#resume" className="hover:text-pinkDark">Resumo</a>
-        <a href="#contact" className="hover:text-pinkDark">Contato</a>
+      <nav className='hidden space-x-6 md:flex'>
+        <a href='#home' className='hover:text-pinkDark'>
+          Home
+        </a>
+        <a href='#about' className='hover:text-pinkDark'>
+          Sobre
+        </a>
+        <a href='#portfolio' className='hover:text-pinkDark'>
+          Portfólio
+        </a>
+        <a href='#services' className='hover:text-pinkDark'>
+          Serviços
+        </a>
+        <a href='#resume' className='hover:text-pinkDark'>
+          Resumo
+        </a>
+        <a href='#contact' className='hover:text-pinkDark'>
+          Contato
+        </a>
       </nav>
 
-      <div className="md:hidden">
+      <div className='md:hidden'>
         <button onClick={toggleMenu}>
           {isOpen ? <X size={32} /> : <List size={32} />}
         </button>
       </div>
 
       {isOpen && (
-        <nav className="absolute top-16 right-0 bg-white p-6 shadow-md rounded-lg flex flex-col space-y-4 md:hidden">
-          <a href="#home" className="hover:text-pinkDark">Home</a>
-          <a href="#about" className="hover:text-pinkDark">Sobre</a>
-          <a href="#portfolio" className="hover:text-pinkDark">Portfólio</a>
-          <a href="#services" className="hover:text-pinkDark">Serviços</a>
-          <a href="#resume" className="hover:text-pinkDark">Resumo</a>
-          <a href="#contact" className="hover:text-pinkDark">Contato</a>
+        <nav className='absolute right-0 top-16 flex flex-col space-y-4 rounded-lg bg-white p-6 shadow-md md:hidden'>
+          <a href='#home' className='hover:text-pinkDark'>
+            Home
+          </a>
+          <a href='#about' className='hover:text-pinkDark'>
+            Sobre
+          </a>
+          <a href='#portfolio' className='hover:text-pinkDark'>
+            Portfólio
+          </a>
+          <a href='#services' className='hover:text-pinkDark'>
+            Serviços
+          </a>
+          <a href='#resume' className='hover:text-pinkDark'>
+            Resumo
+          </a>
+          <a href='#contact' className='hover:text-pinkDark'>
+            Contato
+          </a>
         </nav>
       )}
     </header>
